@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Currency</string>
+    <string name="api_key">20c395fa0ef0ed6c25bb</string>
+    <string name="currency_converter">Currency Converter</string>
+    <string name="converter">=</string>
+    <string name="eur">EUR</string>
+    <string name="euro">Euro</string>
+    <string name="usd">USD</string>
+    <string name="american_dollar">American Dollar</string>
+    <string name="amount_of_money">Amount of money..</string>
+    <string name="symbol_euro">#</string>
+    <string name="symbol_usd">$</string>
 </resources>
