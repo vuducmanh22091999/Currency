@@ -23,8 +23,8 @@
         android:id="@+id/cardViewCurrencyFrom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitle">
@@ -39,8 +39,8 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ic_france"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvCurrencyFrom"
@@ -51,8 +51,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/imgFlagFrom"
-                app:layout_constraintStart_toEndOf="@id/imgFlagFrom"/>
+                app:layout_constraintStart_toEndOf="@id/imgFlagFrom"
+                app:layout_constraintTop_toTopOf="@id/imgFlagFrom" />
 
             <TextView
                 android:id="@+id/tvDetailsCurrencyFrom"
@@ -63,7 +63,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/imgFlagFrom"
-                app:layout_constraintStart_toEndOf="@id/imgFlagFrom"/>
+                app:layout_constraintStart_toEndOf="@id/imgFlagFrom" />
 
             <ImageView
                 android:id="@+id/imgSwitchFrom"
@@ -71,23 +71,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/ic_right_arrow"
-                app:layout_constraintTop_toTopOf="@id/imgFlagFrom"
                 app:layout_constraintBottom_toBottomOf="@id/imgFlagFrom"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgFlagFrom" />
 
             <EditText
                 android:id="@+id/etInputAmountOfMoneyFrom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/amount_of_money"
                 android:inputType="number"
-                app:layout_constraintStart_toStartOf="parent"
+                android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgFlagFrom"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgFlagFrom" />
 
             <TextView
                 android:id="@+id/tvSymbolCurrencyFrom"
@@ -96,9 +96,9 @@
                 android:layout_marginEnd="8dp"
                 android:text="@string/symbol_euro"
                 android:textSize="26sp"
-                app:layout_constraintTop_toTopOf="@id/etInputAmountOfMoneyFrom"
                 app:layout_constraintBottom_toBottomOf="@id/etInputAmountOfMoneyFrom"
-                app:layout_constraintEnd_toEndOf="@id/etInputAmountOfMoneyFrom"/>
+                app:layout_constraintEnd_toEndOf="@id/etInputAmountOfMoneyFrom"
+                app:layout_constraintTop_toTopOf="@id/etInputAmountOfMoneyFrom" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -121,8 +121,8 @@
         android:id="@+id/cardViewCurrencyTo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnSwitch">
@@ -137,8 +137,8 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/ic_united_states"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvCurrencyTo"
@@ -149,8 +149,8 @@
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintTop_toTopOf="@id/imgFlagTo"
-                app:layout_constraintStart_toEndOf="@id/imgFlagTo"/>
+                app:layout_constraintStart_toEndOf="@id/imgFlagTo"
+                app:layout_constraintTop_toTopOf="@id/imgFlagTo" />
 
             <TextView
                 android:id="@+id/tvDetailsCurrency"
@@ -161,7 +161,7 @@
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/imgFlagTo"
-                app:layout_constraintStart_toEndOf="@id/imgFlagTo"/>
+                app:layout_constraintStart_toEndOf="@id/imgFlagTo" />
 
             <ImageView
                 android:id="@+id/imgSwitch"
@@ -169,23 +169,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/ic_right_arrow"
-                app:layout_constraintTop_toTopOf="@id/imgFlagTo"
                 app:layout_constraintBottom_toBottomOf="@id/imgFlagTo"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgFlagTo" />
 
             <EditText
                 android:id="@+id/etInputAmountOfMoney"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/amount_of_money"
                 android:inputType="number"
-                app:layout_constraintStart_toStartOf="parent"
+                android:padding="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/imgFlagTo"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgFlagTo" />
 
             <TextView
                 android:id="@+id/tvSymbolCurrencyTo"
@@ -194,9 +194,9 @@
                 android:layout_marginEnd="8dp"
                 android:text="@string/symbol_usd"
                 android:textSize="26sp"
-                app:layout_constraintTop_toTopOf="@id/etInputAmountOfMoney"
                 app:layout_constraintBottom_toBottomOf="@id/etInputAmountOfMoney"
-                app:layout_constraintEnd_toEndOf="@id/etInputAmountOfMoney"/>
+                app:layout_constraintEnd_toEndOf="@id/etInputAmountOfMoney"
+                app:layout_constraintTop_toTopOf="@id/etInputAmountOfMoney" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
