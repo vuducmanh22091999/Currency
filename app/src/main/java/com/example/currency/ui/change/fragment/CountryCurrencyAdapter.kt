@@ -9,13 +9,21 @@ import com.example.currency.R
 import com.example.currency.data.model.country.CountryItem
 import kotlinx.android.synthetic.main.item_switch_currency.view.*
 
-class CountryCurrencyAdapter (private val listCountry: List<CountryItem>) : RecyclerView.Adapter<CountryCurrencyAdapter.ViewHolder>() {
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class CountryCurrencyAdapter(
+    private var listCountry: List<CountryItem>,
+    val onClick: (Int, String) -> Unit
+) : RecyclerView.Adapter<CountryCurrencyAdapter.ViewHolder>() {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun dataBindViewHolder(countryItem: CountryItem) {
             itemView.tvCurrencyId.text = countryItem.currencyId
             itemView.tvCurrencyName.text = countryItem.currencyName
-            Glide.with(itemView.context).load(R.drawable.ic_united_states).into(itemView.imgFlagCountry)
+            Glide.with(itemView.context).load(R.drawable.ic_united_states)
+                .into(itemView.imgFlagCountry)
             itemView.imgSwitchFrom.setImageResource(R.drawable.ic_right_arrow)
+
+            itemView.imgSwitchFrom.setOnClickListener {
+                onClick(adapterPosition, countryItem.id)
+            }
         }
     }
 
@@ -30,4 +38,9 @@ class CountryCurrencyAdapter (private val listCountry: List<CountryItem>) : Recy
     }
 
     override fun getItemCount(): Int = listCountry.size
+
+    fun filterCountries(filteredCountries: List<CountryItem>) {
+        listCountry = filteredCountries
+        notifyDataSetChanged()
+    }
 }

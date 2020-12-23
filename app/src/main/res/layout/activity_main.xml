@@ -153,7 +153,7 @@
                 app:layout_constraintTop_toTopOf="@id/imgFlagTo" />
 
             <TextView
-                android:id="@+id/tvDetailsCurrency"
+                android:id="@+id/tvDetailsCurrencyTo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
